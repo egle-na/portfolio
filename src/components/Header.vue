@@ -2,7 +2,7 @@
   <header>
 
     <!-- Hamburger icon -->
-    <!--   make hamburger icon transform into X to close nav   -->
+    <!-- // make hamburger icon transform into X to close nav -->
     <button class="mobile nav-btn" @click="navVisible = !navVisible">&#9776;</button>
 
     <!-- Page Header Title -->
@@ -12,16 +12,7 @@
 
     <!-- Navigation -->
     <nav class="navigation container nav" :class="{'navigation--visible': navVisible}">
-      <ul class="nav__list">
-        <li><router-link to="/photography">Photography</router-link></li>
-        <li><router-link to="/illustration">Illustration</router-link></li>
-        <li><router-link to="/modeling">3D Modeling</router-link></li>
-        <li><router-link to="/frontend">Frontend</router-link></li>
-      </ul>
-      <ul class="nav__list">
-        <li><router-link to="/about-me">About me</router-link></li>
-        <li><router-link to="/contact-me">Contact me</router-link></li>
-      </ul>
+      <slot />
     </nav>
   </header>
 </template>
@@ -45,22 +36,19 @@
 <style scoped>
 
   header {
+    position: sticky;
+    top: 0;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    background: #161616f4;
+
     display: flex;
     flex-direction: column;
-    padding: 1em;
     border-bottom: var(--clr-accent) solid 2px;
-    margin-bottom: 1em;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 
   a {
-    text-transform: uppercase;
-    letter-spacing: .2em;
     white-space: nowrap;
     border-bottom: transparent solid 1px;
     transition: border-bottom-color 200ms;
@@ -132,7 +120,7 @@
     align-items: center;
   }
 
-  .nav__list:first-child {
+  .nav__list:not(:last-child) {
     margin-bottom: 2em;
   }
 
