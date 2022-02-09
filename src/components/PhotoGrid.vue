@@ -3,7 +3,7 @@
 
     <div class="flex-container" v-for="(set, index) in imagesReady" :key="index">
       <img v-for="(image) in set" :key="image.id"
-           :src="require(`../assets/images/illustration/${image.img}`)"
+           :src="require(`../assets/images/${type}/${image.img}`)"
            :alt="image.alt"
            :style="`width: calc(${image.width} - ${(set.length - 1) * .5 / set.length}em`"
            @click="$emit('openImage', image.id)"
@@ -15,7 +15,7 @@
 <script>
   export default {
     name: "PhotoGrid",
-    props:[ 'images' ],
+    props:[ 'images', 'type' ],
     data() {
       return{
         imagesReady: [],
@@ -56,7 +56,7 @@
         })
 
         images.forEach((image,index) => {
-          image.src = require(`../assets/images/illustration/${set[index].img}`);
+          image.src = require(`../assets/images/${this.type}/${set[index].img}`);
         })
         return Promise.all(promises);
       },

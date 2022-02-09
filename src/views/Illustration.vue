@@ -1,8 +1,8 @@
 <template>
 <main class="container">
 
-  <photo-grid :images="illustrations" @openImage="openCarousel"/>
-  <carousel @close="carouselActive = false" v-show="carouselActive"/>
+  <photo-grid :images="illustrations" type="illustration" @openImage="openCarousel"/>
+  <carousel :images="illustrations" type="illustration" :currentImg="carouselActive" @close="carouselActive = false" v-if="carouselActive"/>
 </main>
 </template>
 

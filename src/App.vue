@@ -30,6 +30,7 @@
   :root {
     --clr-bg: #161616;
     --clr-bg-transparent: #161616f4;
+    --clr-bg-transparent50: #161616aa;
     --clr-white: #F8F8FF;
     --clr-accent: #83b3e8;
 
@@ -60,6 +61,7 @@
     background: none;
     color: inherit;
     border: none;
+    cursor: pointer;
   }
 
   ul {

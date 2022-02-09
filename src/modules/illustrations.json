@@ -24,7 +24,8 @@
       "id": 4,
       "img": "Kambarys_environment.jpg",
       "alt": "Girl looking though the window in a blue room with a lot of plants and books.",
-      "description": ""
+      "description": "",
+      "vid": "Kambarys_environment.mp4"
     }
   ],
   [
@@ -32,7 +33,8 @@
       "id": 5,
       "img": "Ledu_karalius.png",
       "alt": "King of the ice cream, refusing to eat ice cream",
-      "description": ""
+      "description": "",
+      "vid": "Ladu_karalius.mp4"
     },
     {
       "id": 6,
@@ -46,7 +48,8 @@
       "id": 7,
       "img": "Skaiste.jpg",
       "alt": "A girl rollerskating with a coffee cup in her hands",
-      "description": ""
+      "description": "",
+      "vid": "Skaiste.mp4"
     },
     {
       "id": 8,
@@ -60,13 +63,15 @@
       "id": 9,
       "img": "Ieva.png",
       "alt": "Scout girl with glasses reading a book",
-      "description": ""
+      "description": "",
+      "vid": "Ieva.mp4"
     },
     {
       "id": 10,
       "img": "Mama.png",
       "alt": "Women taking a picture of a spider and working on a computer, cat on the table",
-      "description": ""
+      "description": "",
+      "vid": "Mama.mp4"
     }
   ],
   [
