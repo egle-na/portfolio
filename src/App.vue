@@ -29,6 +29,7 @@
 <style>
   :root {
     --clr-bg: #161616;
+    --clr-bg-transparent: #161616f4;
     --clr-white: #F8F8FF;
     --clr-accent: #83b3e8;
 

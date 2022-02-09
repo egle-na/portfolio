@@ -40,7 +40,7 @@
     padding: 1em;
     margin-bottom: 1em;
 
-    background: #161616f4;
+    background: var(--clr-bg-transparent);
 
     display: flex;
     flex-direction: column;
