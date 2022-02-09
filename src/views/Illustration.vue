@@ -1,7 +1,8 @@
 <template>
 <main class="container">
 
-  <photo-grid :images="illustrations" />
+  <div v-show="carouselActive">carousel {{ carouselActive }}</div>
+  <photo-grid :images="illustrations" @openImage="openCarousel"/>
 </main>
 </template>
 
@@ -13,9 +14,16 @@
     components: {PhotoGrid},
     data() {
       return{
-        illustrations
+        illustrations,
+        carouselActive: false,
       }
     },
+    methods: {
+      openCarousel(id) {
+        this.carouselActive = true;
+        console.log(id);
+      }
+    }
   }
 </script>
 

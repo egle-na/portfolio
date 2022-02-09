@@ -79,7 +79,7 @@
   .nav-btn {
     position: absolute;
     z-index: 1;
-    font-size: 2rem;
+    font-size: 1.55rem;
     margin: 0;
     transition: color 250ms;
   }

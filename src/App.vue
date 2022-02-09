@@ -35,7 +35,7 @@
     --ff-titillium: 'Titillium Web', sans-serif;
     --ff-dosis: 'Dosis', sans-serif;
 
-    --fs-header: 2.4rem;
+    --fs-header: 1.75rem;
   }
 
   * { box-sizing: border-box }
@@ -78,6 +78,9 @@
   }
 
   @media (min-width: 720px) { /* tablet */
+    :root{
+      --fs-header: 2.4rem;
+    }
     .mobile {
       display: none;
     }
