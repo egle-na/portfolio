@@ -59,26 +59,9 @@
     height: 40vw;
     object-fit: cover;
     object-position: top;
-    /*margin-bottom: 2em;*/
-  }
-
-  /*.media-handle:not(.media-email){*/
-  /*  display: none;*/
-  /*}*/
-
-  .media-links.non-mobile {
-    display: none;
   }
 
   @media (min-width: 720px){
-    .media-links.mobile {
-      display: none;
-    }
-
-    .media-links.non-mobile{
-      display: flex;
-    }
-
     .image-container {
       flex-direction: row;
       align-items: stretch;
@@ -91,13 +74,5 @@
       min-height: 358px;
       margin-bottom: 0;
     }
-
   }
-
-  /*@media (min-width: 1300px) {*/
-  /*  .media-handle{*/
-  /*    display: initial;*/
-  /*    color: pink;*/
-  /*  }*/
-  /*}*/
 </style>

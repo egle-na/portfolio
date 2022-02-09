@@ -50,7 +50,8 @@
 
 <style scoped>
   .container {
-    max-width: 1000px
+    max-width: 1000px;
+    margin-bottom: 2em;
   }
 
   p {

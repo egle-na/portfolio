@@ -34,7 +34,6 @@
 </script>
 
 <style scoped>
-
   header {
     position: sticky;
     top: 0;

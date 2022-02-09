@@ -19,42 +19,27 @@ const routes = [
   {
     path: '/contact-me',
     name: 'Contacts',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
+    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
   },
   {
     path: '/photography',
     name: 'Photography',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Photography.vue')
+    component: () => import(/* webpackChunkName: "photography" */ '../views/Photography.vue')
   },
   {
     path: '/illustration',
     name: 'Illustration',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Illustration.vue')
+    component: () => import(/* webpackChunkName: "illustration" */ '../views/Illustration.vue')
   },
   {
     path: '/modeling-vfx',
     name: 'Modeling',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Photography.vue')
+    component: () => import(/* webpackChunkName: "modeling" */ '../views/Photography.vue')
   },
   {
     path: '/frontend',
     name: 'Frontend',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Photography.vue')
+    component: () => import(/* webpackChunkName: "frontend" */ '../views/Photography.vue')
   }
 ]
 
