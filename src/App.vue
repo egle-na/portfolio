@@ -6,7 +6,7 @@
       <ul class="nav__list">
         <li><router-link to="/photography">Photography</router-link></li>
         <li><router-link to="/illustration">Illustration</router-link></li>
-        <li><router-link to="/modeling">3D Modeling</router-link></li>
+        <li><router-link to="/modeling-vfx">3D Modeling</router-link></li>
         <li><router-link to="/frontend">Frontend</router-link></li>
       </ul>
       <ul class="nav__list">

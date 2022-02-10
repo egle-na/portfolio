@@ -13,7 +13,8 @@
     <img class="carousel__image"
          :src="require(`../assets/images/${type}/${imagesList[currentImageIndex].img}`)"
          :alt="imagesList[currentImageIndex].alt">
-    <div v-if="imagesList[currentImageIndex].vid">Video</div>
+    <!-- Display vid if video file exists -->
+<!--    <div v-if="imagesList[currentImageIndex].vid">vid</div>-->
 
     <button class="carousel__btn carousel__btn--next" @click="nextImage()">
       <i class="fa fa-angle-right"/>

@@ -34,7 +34,7 @@ const routes = [
   {
     path: '/modeling-vfx',
     name: 'Modeling',
-    component: () => import(/* webpackChunkName: "modeling" */ '../views/Photography.vue')
+    component: () => import(/* webpackChunkName: "modeling" */ '../views/Modeling.vue')
   },
   {
     path: '/frontend',
