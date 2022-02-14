@@ -37,7 +37,8 @@
   header {
     position: sticky;
     top: 0;
-    padding: 1em;
+    z-index: 1;
+    padding: 1em 1em .5em;
     margin-bottom: 1em;
 
     background: var(--clr-bg-transparent);
@@ -67,7 +68,7 @@
     font-size: var(--fs-header);
     letter-spacing: initial;
     font-weight: 300;
-    margin: 0 auto;
+    margin: 0 auto .2em;
     border: none;
     transition: none;
   }

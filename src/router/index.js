@@ -39,7 +39,7 @@ const routes = [
   {
     path: '/frontend',
     name: 'Frontend',
-    component: () => import(/* webpackChunkName: "frontend" */ '../views/Photography.vue')
+    component: () => import(/* webpackChunkName: "frontend" */ '../views/Frontend.vue')
   }
 ]
 

@@ -32,6 +32,7 @@
     --clr-bg-transparent: #161616f4;
     --clr-bg-transparent50: #161616aa;
     --clr-white: #F8F8FF;
+    --clr-white-transparent: #F8F8FFcc;
     --clr-accent: #83b3e8;
 
     --ff-titillium: 'Titillium Web', sans-serif;

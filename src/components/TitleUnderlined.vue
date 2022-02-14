@@ -15,11 +15,7 @@
 
     width: -moz-fit-content;
     width: fit-content;
-    margin: .6em auto 0;
-  }
-
-  h2:first-child {
-    margin: .4em auto .9em;
+    margin: .6em auto .9em;
   }
 
   h2::after {
