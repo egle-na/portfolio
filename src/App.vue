@@ -23,7 +23,10 @@
 <script>
   import Header from "@/components/Header";
   export default {
-    components: {Header}
+    components: {Header},
+    created() {
+      document.title = "Eglė Našlėnaitė | Portfolio";
+    }
   }
 </script>
 <style>
