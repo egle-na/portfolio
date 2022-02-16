@@ -13,40 +13,46 @@
       "alt": "Rocks",
       "description-lt": "Akmenys",
       "description": "Rocks",
-      "link": ""
+      "link": "/rocks"
     },
     {
       "id": 3,
       "img": "Architecture.jpg",
       "alt": "",
       "description-lt": "Architektūra",
-      "description": "Architecture"
+      "description": "Architecture",
+      "link": "/architecture"
     },
     {
       "id": 4,
       "img": "Lines.jpg",
       "alt": "",
       "description-lt": "Linijos",
-      "description": "Lines"
+      "description": "Lines",
+      "link": "/lines"
     },
     {
       "id": 5,
       "img": "Greens.jpg",
       "alt": "",
-      "description": "Greens"
+      "description-lt": "Žalios",
+      "description": "Greens",
+      "link": "/greens"
     },
     {
       "id": 6,
       "img": "Plants.jpg",
       "alt": "",
       "description-lt": "Augalai",
-      "description": "Plants"
+      "description": "Plants",
+      "link": "/plants"
     },
     {
       "id": 7,
       "img": "Reds.jpg",
       "alt": "",
       "description-lt": "Raudonos",
-      "description": "Reds"
+      "description": "Reds",
+      "link": "/reds"
     }
 ]

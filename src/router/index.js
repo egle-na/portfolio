@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    redirect: '/photography',
   },
   {
     path: '/about-me',
@@ -24,7 +24,42 @@ const routes = [
   {
     path: '/photography',
     name: 'Photography',
-    component: () => import(/* webpackChunkName: "photography" */ '../views/Photography.vue')
+    component: () => import(/* webpackChunkName: "photography" */ '../views/Photography.vue'),
+  },
+  {
+    path: '/photography/water',
+    name: 'Water',
+    component: () => import(/* webpackChunkName: "water" */ '../views/Water.vue')
+  },
+  {
+    path: '/photography/rocks',
+    name: 'Rocks',
+    component: () => import(/* webpackChunkName: "rocks" */ '../views/Rocks.vue')
+  },
+  {
+    path: '/photography/architecture',
+    name: 'Architecture',
+    component: () => import(/* webpackChunkName: "architecture" */ '../views/Architecture.vue')
+  },
+  {
+    path: '/photography/lines',
+    name: 'Lines',
+    component: () => import(/* webpackChunkName: "lines" */ '../views/Lines.vue')
+  },
+  {
+    path: '/photography/greens',
+    name: 'Greens',
+    component: () => import(/* webpackChunkName: "greens" */ '../views/Greens.vue')
+  },
+  {
+    path: '/photography/plants',
+    name: 'Plants',
+    component: () => import(/* webpackChunkName: "plants" */ '../views/Plants.vue')
+  },
+  {
+    path: '/photography/reds',
+    name: 'Reds',
+    component: () => import(/* webpackChunkName: "reds" */ '../views/Reds.vue')
   },
   {
     path: '/illustration',

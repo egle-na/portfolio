@@ -72,12 +72,13 @@
   }
 
   .image-title {
-    color: var(--clr-bg);
+    color: #444;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 2.3rem;
 
-    font-family: var(--ff-dosis);
+    letter-spacing: .015em;
+    font-family: var(--ff-oswald);
   }
 
   @media (min-width: 720px) {

@@ -36,7 +36,7 @@
     <li>
       <a>
         <i class="far fa-envelope" />
-        <span class="non-mobile" :class="{'handle-visible': isHorizontal}">egle.naslenaite@gmail.com</span>
+        <span class="non-mobile easy-select" :class="{'handle-visible': isHorizontal}">egle.naslenaite@gmail.com</span>
       </a>
     </li>
   </ul>
@@ -79,6 +79,10 @@
 
   .media-links a:hover i {
     color: #83b3e8;
+  }
+
+  .easy-select {
+    user-select: all;
   }
 
   @media (min-width: 720px){

@@ -37,6 +37,7 @@
 
     --ff-titillium: 'Titillium Web', sans-serif;
     --ff-dosis: 'Dosis', sans-serif;
+    --ff-oswald: 'Oswald', sans-serif;
 
     --fs-header: 1.75rem;
   }
