@@ -30,6 +30,5 @@ jobs:
       - name: Create 404 page
         uses: canastro/copy-file-action@master
         with:
-          brances: "deploy"
           source: "index.html"
           target: "404.html"
