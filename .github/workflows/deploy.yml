@@ -28,7 +28,7 @@ jobs:
           FOLDER: dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create 404 page
-        uses: canastro/copy-file-action@master
+        uses: canastro/copy-file-action@deploy
         with:
           source: "index.html"
           target: "404.html"
