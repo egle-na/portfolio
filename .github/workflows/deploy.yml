@@ -20,6 +20,11 @@ jobs:
           npm install -g @vue/cli yarn
           yarn install
           yarn build
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: "index.html"
+          target: "404.html"
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
