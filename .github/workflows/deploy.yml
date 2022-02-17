@@ -23,8 +23,8 @@ jobs:
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          source: "index.html"
-          target: "404.html"
+          source: "dist/index.html"
+          target: "dist/404.html"
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
