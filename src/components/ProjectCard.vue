@@ -75,6 +75,14 @@
     object-fit: cover;
   }
 
+  .project-display img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top center;
+  }
+
   .project-card h2 {
     margin: 0 auto .5em 0;
   }

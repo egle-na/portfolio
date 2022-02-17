@@ -1,24 +1,74 @@
 <template>
-  <form action="#" method="post">
+  <div>
+    <form action="#" method="post" @submit.prevent="sendEmail">
 
-    <div class="contact-form" :class="{'form--horizontal': isHorizontal, 'form--dark': isDark}">
+      <div class="contact-form" :class="{'form--horizontal': isHorizontal, 'form--dark': isDark}">
 
-      <div class="container--short">
-        <input id="name" name="name" type="text" placeholder="Name" aria-label="Name" required>
-        <input id="email" name="email" type="email" placeholder="E-mail" aria-label="E-mail" required>
+        <div class="container--short">
+          <input v-model="name" type="text" placeholder="Name" aria-label="Name" required>
+          <input v-model="email" type="email" placeholder="E-mail" aria-label="E-mail" required>
+        </div>
+        <textarea v-model="message" placeholder="Enter your message here" aria-label="Message" required></textarea>
+
       </div>
-      <textarea id="message" name="message" placeholder="Enter your message here" aria-label="Message" required></textarea>
-
-    </div>
-    <button class="submit-btn" type="submit">Send</button>
-
-  </form>
+      <button class="submit-btn" type="submit">Send</button>
+    </form>
+    <FloatingMessage :message="messageSentMsg" v-if="messageSentMsg" @close="messageSentMsg = false"/>
+  </div>
 </template>
-
 <script>
+  import emailjs from '@emailjs/browser';
+  import FloatingMessage from "@/components/FloatingMessage";
+
+  emailjs.init("user_MXFHReUi9kA6X7O3L94PD");
   export default {
     name: "ContactForm",
-    props: [ 'isHorizontal', 'isDark' ]
+    components: {FloatingMessage},
+    props: [ 'isHorizontal', 'isDark' ],
+    data() {
+      return {
+        name: "",
+        email: "",
+        message: "",
+        messageSentMsg: false
+      }
+    },
+    methods: {
+      sendEmail() {
+        // generate a five-digit number for the contact_number variable
+        // let contact_number = Math.random() * 100000 | 0;
+
+        let contactForm = {
+          // contact_number,
+          name: this.name,
+          message: this.message,
+          reply_to: this.email
+        }
+
+        emailjs.send('service_contact-me', 'contact-form', contactForm)
+            .then(() => {
+              this.clearForm();
+              this.messageSent(true);
+            }).catch(error => {
+              console.error(error);
+              this.messageSent(false);
+            });
+      },
+      clearForm() {
+        console.log(this.name, this);
+        this.name = "";
+        this.email = "";
+        this.message = "";
+      },
+      messageSent(sent) {
+        this.messageSentMsg = sent
+            ? "Message sent successfully!"
+            : "Could not send the message. Please try to contact me in other ways."
+        setTimeout(() => {
+          this.messageSentMsg = false;
+        }, 8000)
+      }
+    }
   }
 </script>
 

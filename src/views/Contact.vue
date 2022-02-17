@@ -15,12 +15,8 @@
     <!-- Title -->
     <title-underlined>About me</title-underlined>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac neque semper,
-      pulvinar ligula viverra, scelerisque lorem. Maecenas fermentum risus quis neque malesuada,
-      quis molestie tortor posuere. Nunc non purus sed arcu semper auctor ut in elit. Fusce nec
-      felis tempor ante ultrices venenatis sit amet quis est. Integer eleifend eros vel sagittis
-      convallis. Proin at nibh ut quam posuere pulvinar. Nulla erat nibh, aliquam vitae aliquet quis,
-      posuere ac lacus.
+      Junior Frontend Developer with a passion for design and technology. Working mostly with the Vue.js framework.
+      Fast learner, thorough, and always eager to learn. Loves sunny days and being in nature.
     </p>
   </main>
 </template>
