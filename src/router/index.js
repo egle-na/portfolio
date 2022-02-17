@@ -75,6 +75,11 @@ const routes = [
     path: '/frontend',
     name: 'Frontend',
     component: () => import(/* webpackChunkName: "frontend" */ '../views/Frontend.vue')
+  },
+  {
+    path: '/:catchAll(.*)*',
+    name: 'not-found',
+    redirect: '/photography'
   }
 ]
 
