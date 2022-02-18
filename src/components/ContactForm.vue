@@ -73,12 +73,14 @@
 </script>
 
 <style scoped>
-  form, .contact-form {
+  form {
     display: flex;
     flex-direction: column;
   }
 
   .contact-form {
+    display: flex;
+    flex-direction: column;
     margin: 1.5em 0 .8em;
   }
 
@@ -130,6 +132,7 @@
 
   @media (min-width: 720px) {
     .form--horizontal{
+      display: flex;
       flex-direction: row;
     }
 

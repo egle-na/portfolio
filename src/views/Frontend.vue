@@ -1,9 +1,17 @@
 <template>
 <main class="container">
 
+  <!-- Inventory System -->
   <project-card>
     <template v-slot:title>Inventory System</template>
-    <template v-slot:description></template>
+    <template v-slot:description>
+      <p>
+        Inventory system customized for Teltonika company. Tracking owned, lent, and borrowed gear, get notifications
+        when equipment is being lent, returned, or given to you. Easily add or remove equipment. As an admin - add
+        and remove users and companies, take ownership of equipment or transfer to other users. It is a single-page
+        application developed with the Vue.js framework, vuex, vue-router, Axios, i18n. Backend by: Povilas Tamulis.
+      </p>
+    </template>
     <template v-slot:button>
       <a href="https://egle-na.github.io/inventory-system" target="_blank" class="visit-btn">Visit Page</a>
     </template>
@@ -14,10 +22,14 @@
     </template>
   </project-card>
 
+  <!-- Portfolio -->
   <project-card>
     <template v-slot:title>Portfolio Page</template>
     <template v-slot:description>
-      <p>Custom portfolio page, with different image layouts and responsive design. Built with Vue.js framework.</p>
+      <p>
+        My custom portfolio page showcasing my work in photography, illustration and frontend development.
+        Different image grids and layouts, mobile-first responsive design. Built with Vue.js framework.
+      </p>
     </template>
     <template v-slot:button>
       <a href="/" class="visit-btn" target="_blank">Visit Page</a>
@@ -27,9 +39,10 @@
     </template>
   </project-card>
 
+  <!-- Maišiagala Kindergarten -->
   <project-card>
     <template v-slot:title>Maišiagala Kindergarten</template>
-    <template v-slot:description></template>
+    <template v-slot:description>Maišiagala kindergarten website redesign. Work in progress.</template>
     <template v-slot:button>
       <a href="https://www.maisiagalosdarzelis.lt/" target="_blank" class="visit-btn">Visit Page</a>
     </template>
