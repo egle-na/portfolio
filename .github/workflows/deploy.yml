@@ -20,7 +20,7 @@ jobs:
           npm install -g @vue/cli yarn
           yarn install
           yarn build
-      - name: copy file
+      - name: Create 404 Redirect
         uses: canastro/copy-file-action@master
         with:
           source: "dist/index.html"
