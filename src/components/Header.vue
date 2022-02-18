@@ -3,7 +3,8 @@
 
     <!-- Hamburger icon -->
     <!-- // make hamburger icon transform into X to close nav -->
-    <button class="mobile nav-btn" @click="navVisible = !navVisible">&#9776;</button>
+    <button v-if="!navVisible" class="mobile nav-btn" @click="navVisible = !navVisible">&#9776;</button>
+    <button v-else class="mobile nav-btn" @click="navVisible = !navVisible">&times;</button>
 
     <!-- Page Header Title -->
     <router-link to="/" class="title">

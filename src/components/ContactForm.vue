@@ -36,10 +36,10 @@
     methods: {
       sendEmail() {
         // generate a five-digit number for the contact_number variable
-        // let contact_number = Math.random() * 100000 | 0;
+        let contact_number = Math.random() * 100000 | 0;
 
         let contactForm = {
-          // contact_number,
+          contact_number,
           name: this.name,
           message: this.message,
           reply_to: this.email
@@ -73,14 +73,12 @@
 </script>
 
 <style scoped>
-  form {
+  form, .contact-form {
     display: flex;
     flex-direction: column;
   }
 
   .contact-form {
-    display: flex;
-    flex-direction:column;
     margin: 1.5em 0 .8em;
   }
 

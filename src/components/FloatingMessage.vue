@@ -15,7 +15,7 @@
 <style scoped>
 
   .floating-card {
-    position: absolute;
+    position: fixed;
     bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
