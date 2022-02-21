@@ -54,5 +54,13 @@
       "description-lt": "Raudonos",
       "description": "Reds",
       "link": "/reds"
+    },
+    {
+      "id": 8,
+      "img": "Yellows.jpg",
+      "alt": "",
+      "description-lt": "Geltonos",
+      "description": "Yellows",
+      "link": "/yellows"
     }
 ]
