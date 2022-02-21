@@ -1,21 +1,36 @@
 <template>
-<div class="carousel" @keydown.right="nextImage" @keydown.l.left="previousImage">
+<div class="carousel"
+     @keydown.right="nextImage"
+     @keydown.left="previousImage"
+     @keydown.space.prevent ="toggleVideoPlay"
+     ref="carousel"
+     tabindex="0">
 
   <div class="backdrop" @click="$emit('close')" />
   <button class="close-btn" @click="$emit('close')">&times;</button>
 
   <div class="image-container">
+    <div class="overlay"></div>
+
+    <!-- Display vid if video file exists -->
+    <video v-if="imagesList[currentImageIndex].vid"
+           :src="require(`../assets/images/${type}/vid/${imagesList[currentImageIndex].vid}`)"
+           width="100%"
+           ref="video"
+           controls controlslist="nodownload" disablepictureinpicture
+           autoplay muted loop>
+      <img class="carousel__image"
+           :src="require(`../assets/images/${type}/${imagesList[currentImageIndex].img}`)"
+           :alt="imagesList[currentImageIndex].alt">
+    </video>
+
+    <img v-else class="carousel__image"
+         :src="require(`../assets/images/${type}/${imagesList[currentImageIndex].img}`)"
+         :alt="imagesList[currentImageIndex].alt">
 
     <button class="carousel__btn carousel__btn--previous" @click="previousImage()">
       <i class="fa fa-angle-left"/>
     </button>
-
-    <img class="carousel__image"
-         :src="require(`../assets/images/${type}/${imagesList[currentImageIndex].img}`)"
-         :alt="imagesList[currentImageIndex].alt">
-    <!-- Display vid if video file exists -->
-<!--    <div v-if="imagesList[currentImageIndex].vid">vid</div>-->
-
     <button class="carousel__btn carousel__btn--next" @click="nextImage()">
       <i class="fa fa-angle-right"/>
     </button>
@@ -37,6 +52,9 @@
     created() {
       this.currentImageIndex = this.imagesList?.map(image => image.id)?.indexOf(this.currentImg);
     },
+    mounted() {
+      this.keepCarouselActive();
+    },
     computed:{
       imagesList() {
         let unpacked = []
@@ -53,17 +71,36 @@
         this.currentImageIndex = this.currentImageIndex === 0
             ? this.imagesList.length - 1
             : this.currentImageIndex - 1;
+        this.keepCarouselActive();
       },
+
       nextImage() {
         this.currentImageIndex = this.currentImageIndex === this.imagesList.length - 1
             ?  0
             : this.currentImageIndex + 1;
+        this.keepCarouselActive();
+      },
+
+      toggleVideoPlay(){
+        if(this.$refs.video && this.$refs.video !== document.activeElement){
+          if(this.$refs.video.paused) this.$refs.video.play();
+          else this.$refs.video.pause();
+        }
+      },
+
+      keepCarouselActive() {
+        this.$refs.carousel.focus();
       }
     }
   }
 </script>
 
 <style scoped>
+  video {
+    max-width: 100%;
+    max-height: 90vh;
+  }
+
   .carousel {
     position: fixed;
     top: 0;
@@ -112,21 +149,36 @@
     max-height: 90vh;
   }
 
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,
+        var(--clr-bg-transparent50),
+        transparent 30%,
+        transparent 70%,
+        var(--clr-bg-transparent50));
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+
   .carousel__btn {
     position: absolute;
-    top:0;
-    bottom: 0;
+    top:50%;
+    transform: translateY(-50%);
+    /*bottom: 0;*/
 
     font-size: 2em;
     line-height: 1;
-    padding: .5em;
+    padding: 1em;
 
     color: var(--clr-white);
     opacity: 0;
     transition: opacity 300ms ease-in-out;
   }
 
-  .image-container:hover .carousel__btn{
+  .image-container:hover .carousel__btn,
+  .image-container:hover .overlay{
     opacity: 1;
   }
 
@@ -136,14 +188,12 @@
 
   .carousel__btn--previous {
     left: 0;
-    padding-right: 25%;
-    background: linear-gradient(to right, var(--clr-bg-transparent50), transparent);
+    padding-left: .5em;
   }
 
   .carousel__btn--next {
     right: 0;
-    padding-left: 25%;
-    background: linear-gradient(to left, var(--clr-bg-transparent50), transparent);
+    padding-right: .5em;
   }
 
   @media (min-width: 770px) {
