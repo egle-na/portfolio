@@ -81,7 +81,7 @@
     font-family: var(--ff-oswald);
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 770px) {
     .photo-grid {
       grid-template-columns: 1fr 1fr;
     }

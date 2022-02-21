@@ -85,7 +85,7 @@
     user-select: all;
   }
 
-  @media (min-width: 720px){
+  @media (min-width: 770px){
     .media-links {
       flex-direction: column;
       justify-content: space-around;

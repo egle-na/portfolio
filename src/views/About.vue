@@ -75,7 +75,7 @@
     display: none;
   }
 
-  @media (min-width: 720px){
+  @media (min-width: 770px){
     .media-links.mobile {
       display: none;
     }

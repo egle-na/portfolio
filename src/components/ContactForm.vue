@@ -130,7 +130,7 @@
     color: var(--clr-accent);
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 770px) {
     .form--horizontal{
       display: flex;
       flex-direction: row;

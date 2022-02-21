@@ -57,7 +57,7 @@
     object-position: top;
   }
 
-  @media (min-width: 720px){
+  @media (min-width: 770px){
     .image-container {
       flex-direction: row;
       align-items: stretch;

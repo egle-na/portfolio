@@ -101,7 +101,10 @@
 
   .image-container {
     position: absolute;
-    max-width: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .carousel__image {
@@ -143,9 +146,10 @@
     background: linear-gradient(to left, var(--clr-bg-transparent50), transparent);
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 770px) {
     .image-container {
-      max-width: 90vw;
+      width: 90vw;
+      max-width: calc(100vh * (1 + 1/3)); /* 1.333... image ratio */
     }
 
     .carousel__btn{

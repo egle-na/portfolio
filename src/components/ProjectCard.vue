@@ -111,7 +111,7 @@
     color: var(--clr-accent);
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 770px) {
     .project-card {
       flex-direction: row;
       margin: 7em 0;

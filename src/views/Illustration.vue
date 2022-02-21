@@ -30,5 +30,10 @@
 
 <style scoped>
 
+  @media (min-width: 770px) {
+    /deep/ .image-container {
+      max-width: calc(100vh * 1.6); /* wider image ratio */
+    }
+  }
 
 </style>

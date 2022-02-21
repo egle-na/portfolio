@@ -105,7 +105,7 @@
     margin-bottom: .5em;
   }
 
-  @media (max-width: 720px){
+  @media (max-width: 770px){
     .flex-container {
       flex-direction: column;
     }

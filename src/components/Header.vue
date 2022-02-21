@@ -129,7 +129,7 @@
     padding: .5em;
   }
 
-  @media (min-width: 720px) { /* tablet */
+  @media (min-width: 770px) { /* tablet */
     .navigation {
       background: none;
       font-size: .8rem;

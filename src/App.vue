@@ -85,7 +85,7 @@
     display: none;
   }
 
-  @media (min-width: 720px) { /* tablet */
+  @media (min-width: 770px) { /* tablet */
     :root{
       --fs-header: 2.4rem;
     }
