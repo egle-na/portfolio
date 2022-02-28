@@ -1,15 +1,18 @@
 <template>
-  <div v-if="!isLoading">
+  <div>
+    <img v-if="isLoading" src="" alt="" title="Loading...">
+    <div v-else>
 
-    <div class="flex-container" v-for="(set, index) in imagesReady" :key="index">
-      <img v-for="(image) in set" :key="image.id"
-           :src="require(`../assets/images/${type}/${image.img}`)"
-           :alt="image.alt"
-           :style="`width: calc(${image.width} - ${(set.length - 1) * .5 / set.length}em`"
-           @click="$emit('openImage', image.id)"
-           class="grid-img">
+      <div class="flex-container" v-for="(set, index) in imagesReady" :key="index">
+        <img v-for="(image) in set" :key="image.id"
+             :src="require(`../assets/images/${type}/${image.img}`)"
+             :alt="image.alt"
+             :style="`width: calc(${image.width} - ${(set.length - 1) * .5 / set.length}em`"
+             @click="$emit('openImage', image.id)"
+             class="grid-img">
+      </div>
+
     </div>
-
   </div>
 </template>
 <script>

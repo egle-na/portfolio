@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form action="#" method="post" @submit.prevent="sendEmail">
+    <form action="#" method="post" class="form" @submit.prevent="sendEmail">
 
       <div class="contact-form" :class="{'form--horizontal': isHorizontal, 'form--dark': isDark}">
 
@@ -73,7 +73,7 @@
 </script>
 
 <style scoped>
-  form {
+  .form {
     display: flex;
     flex-direction: column;
   }
