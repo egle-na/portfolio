@@ -2,7 +2,7 @@
 <main class="container">
 
   <!-- Inventory System -->
-  <project-card>
+  <project-card code="https://github.com/egle-na/inventorizavimo_sistema" page="https://egle-na.github.io/inventory-system">
     <template v-slot:title>Inventory System</template>
     <template v-slot:description>
       <p>
@@ -12,9 +12,6 @@
         application developed with the Vue.js framework, vuex, vue-router, Axios, i18n. Backend by: Povilas Tamulis.
       </p>
     </template>
-    <template v-slot:button>
-      <a href="https://egle-na.github.io/inventory-system" target="_blank" class="visit-btn">Visit Page</a>
-    </template>
     <template v-slot:display>
       <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fto3EomHM1m5BMdu9AtYEk6%2FInventorius%3Fnode-id%3D0%253A1"
               allowfullscreen
@@ -23,7 +20,7 @@
   </project-card>
 
   <!-- Portfolio -->
-  <project-card>
+  <project-card code="https://github.com/egle-na/portfolio" page="/">
     <template v-slot:title>Portfolio Page</template>
     <template v-slot:description>
       <p>
@@ -31,21 +28,18 @@
         Different image grids and layouts, mobile-first responsive design. Built with Vue.js framework.
       </p>
     </template>
-    <template v-slot:button>
-      <a href="/" class="visit-btn" target="_blank">Visit Page</a>
-    </template>
     <template v-slot:display>
       <img src="../assets/images/frontend/Portfolio-screen-capture.jpg" alt="Portfolio page illustrations grid">
     </template>
   </project-card>
 
   <!-- Maišiagala Kindergarten -->
-  <project-card>
+  <project-card page="https://www.maisiagalosdarzelis.lt/">
     <template v-slot:title>Maišiagala Kindergarten</template>
     <template v-slot:description>Maišiagala kindergarten website redesign. Work in progress.</template>
-    <template v-slot:button>
-      <a href="https://www.maisiagalosdarzelis.lt/" target="_blank" class="visit-btn">Visit Page</a>
-    </template>
+<!--    <template v-slot:pageButton>-->
+<!--      <a href="https://www.maisiagalosdarzelis.lt/" target="_blank" class="btn btn&#45;&#45;disabled">Visit Page</a>-->
+<!--    </template>-->
     <template v-slot:display>
       <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fyhm6tMPcXpHraV5w6KKVzn%2FDar%25C5%25BEelis%3Fnode-id%3D0%253A1"
               allowfullscreen

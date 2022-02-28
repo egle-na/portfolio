@@ -70,5 +70,10 @@
       min-height: 358px;
       margin-bottom: 0;
     }
+
+    .contact-container {
+      display: flex;
+      align-items: center;
+    }
   }
 </style>

@@ -125,14 +125,13 @@
   }
 
   .submit-btn:hover,
-  .submit-btn:focus {
+  .submit-btn:focus:active {
     background: var(--clr-bg);
     color: var(--clr-accent);
   }
 
   @media (min-width: 770px) {
-    .form--horizontal{
-      display: flex;
+    .form--horizontal {
       flex-direction: row;
     }
 

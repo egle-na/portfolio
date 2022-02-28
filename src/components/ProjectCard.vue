@@ -16,9 +16,17 @@
           expedita facere id iste libero molestiae, nemo quam quas, quod repudiandae rerum sapiente sequi veniam vero.</p>
       </slot>
 
-      <slot name="button">
-        <a href="#" class="visit-btn" :class="{'visit-btn--disabled': false}">Visit page</a>
-      </slot>
+      <div class="btn-container">
+<!--        <slot name="codeButton">-->
+<!--          <a href="#" class="btn btn-purple" :class="{'btn&#45;&#45;disabled': false}">Source code</a>-->
+<!--        </slot>-->
+        <a v-if="code" :href="code" target="_blank" class="btn btn--purple">Source code</a>
+        <a :href="page" target="_blank" class="btn" :class="{'btn--disabled': page}">Visit page</a>
+
+<!--        <slot name="pageButton">-->
+<!--          <a href="#" class="btn" :class="{'btn&#45;&#45;disabled': false}">Visit page</a>-->
+<!--        </slot>-->
+      </div>
 
     </div>
 
@@ -42,6 +50,17 @@
   import TitleUnderlined from "@/components/TitleUnderlined";
   export default {
     name: "ProjectCard",
+    props: {
+      code: {
+        type: String,
+        default: ''
+      },
+      page: {
+        type: String,
+        default: ''
+      },
+
+    },
     components: {TitleUnderlined}
   }
 </script>
@@ -87,7 +106,15 @@
     margin: 0 auto .5em 0;
   }
 
-  .visit-btn {
+  .btn-container {
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-block;
     font-family: var(--ff-dosis);
     font-weight: 700;
     letter-spacing: .2em;
@@ -100,15 +127,23 @@
     width: -moz-fit-content;
     width: fit-content;
     padding: .7em 2em;
-    margin: .4em 0;
+    margin: .4em 1em .4em 0;
     align-self: flex-end;
     cursor: pointer;
   }
 
-  .visit-btn:hover,
-  .visit-btn:focus {
+  .btn:last-child {
+    margin-right: 0;
+  }
+
+  .btn:hover,
+  .btn:focus:active {
     background: var(--clr-bg);
     color: var(--clr-accent);
+  }
+
+  .btn--purple{
+    --clr-accent: #977dbd;
   }
 
   @media (min-width: 770px) {
@@ -121,8 +156,8 @@
       flex-direction: row-reverse;
     }
 
-    .project-card:nth-of-type(even) div:first-child,
-    .project-card:nth-of-type(odd) div:last-child {
+    .project-card:nth-of-type(even) .project-description,
+    .project-card:nth-of-type(odd) .project-display {
       margin-right: 2em;
     }
 
@@ -141,6 +176,10 @@
       height: 100%;
       min-height: 300px;
     }
+
+    .btn-container{
+      justify-content: flex-end;
+    }
   }
 
   @media (min-width: 1000px) {
@@ -148,8 +187,8 @@
       margin: 10em 0;
     }
 
-    .project-card:nth-of-type(even) div:first-child,
-    .project-card:nth-of-type(odd) div:last-child {
+    .project-card:nth-of-type(even) .project-description,
+    .project-card:nth-of-type(odd) .project-display {
       margin-right: 3em;
     }
   }

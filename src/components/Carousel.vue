@@ -182,7 +182,7 @@
     opacity: 1;
   }
 
-  .carousel__btn:focus {
+  .carousel__btn:focus:active {
     outline: 0;
   }
 
