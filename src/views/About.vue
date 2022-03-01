@@ -13,8 +13,9 @@
 
     <!-- About me -->
     <p>
-      Junior Frontend Developer with a passion for design and technology. Working mostly with the Vue.js framework.
-      Fast learner, thorough, and always eager to learn. Loves sunny days and being in nature.
+      Self-thought Frontend Developer based in Vilnius, Lithuania. Has a passion for design and technology.
+      Working mostly with the Vue.js framework. Fast learner, thorough, and always eager to learn.
+      Loves sunny days and being in nature.
     </p>
 
     <!-- Title -->
