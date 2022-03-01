@@ -73,6 +73,7 @@
 </script>
 
 <style scoped>
+
   .form {
     display: flex;
     flex-direction: column;
@@ -81,7 +82,7 @@
   .contact-form {
     display: flex;
     flex-direction: column;
-    margin: 1.5em 0 .8em;
+    margin-bottom: .8em;
   }
 
   .contact-form input,
@@ -131,12 +132,19 @@
   }
 
   @media (min-width: 770px) {
-    .form--horizontal {
-      flex-direction: row;
-    }
+    /*.form {*/
+    /*  display: flex;*/
+    /*  flex-direction: column;*/
+    /*}*/
 
     .contact-form {
+      /*display: flex;*/
+      /*flex-direction: column;*/
       margin-top: 0;
+    }
+
+    .form--horizontal {
+      flex-direction: row;
     }
 
     .container--short {
@@ -146,7 +154,7 @@
 
     .contact-container form {
       margin-left: 2em;
-      align-self: center;
+      /*align-self: center;*/
     }
 
     .contact-container textarea{

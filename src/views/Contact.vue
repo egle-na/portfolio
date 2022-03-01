@@ -53,6 +53,7 @@
 
   .image-container__img {
     height: 40vw;
+    margin-bottom: 1em;
     object-fit: cover;
     object-position: top;
   }

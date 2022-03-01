@@ -81,6 +81,18 @@
     max-width: 1200px;
   }
 
+  /* needed for build version */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  /* remove if fixed */
+
   .non-mobile {
     display: none;
   }
