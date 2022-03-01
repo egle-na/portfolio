@@ -1,5 +1,5 @@
 <template>
-<div class="container photo-grid">
+<main class="container photo-grid">
   <router-link :to="'/photography' + image.link" class="image-container" v-for="image in themes" :key="image.id">
 
     <img :src="require(`../assets/images/photography/themes/${image.img}`)"
@@ -12,7 +12,7 @@
     </div>
 
   </router-link>
-</div>
+</main>
 </template>
 
 <script>

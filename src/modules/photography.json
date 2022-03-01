@@ -2,7 +2,7 @@
     {
       "id": 1,
       "img": "Water.jpg",
-      "alt": "Water",
+      "alt": "Sea waves from the above",
       "description-lt": "Vanduo",
       "description": "Water",
       "link": "/water"
@@ -10,7 +10,7 @@
     {
       "id": 2,
       "img": "Rocks.jpg",
-      "alt": "Rocks",
+      "alt": "Rocky multicolor surface",
       "description-lt": "Akmenys",
       "description": "Rocks",
       "link": "/rocks"
@@ -18,7 +18,7 @@
     {
       "id": 3,
       "img": "Architecture.jpg",
-      "alt": "",
+      "alt": "Orange building against blue sky",
       "description-lt": "Architektūra",
       "description": "Architecture",
       "link": "/architecture"
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "img": "Lines.jpg",
-      "alt": "",
+      "alt": "Abstract composition, of blue and black line on the green moss",
       "description-lt": "Linijos",
       "description": "Lines",
       "link": "/lines"
@@ -34,7 +34,7 @@
     {
       "id": 5,
       "img": "Greens.jpg",
-      "alt": "",
+      "alt": "White butterfly on a plant",
       "description-lt": "Žalios",
       "description": "Greens",
       "link": "/greens"
@@ -42,7 +42,7 @@
     {
       "id": 6,
       "img": "Plants.jpg",
-      "alt": "",
+      "alt": "Plants against blue sea and sky",
       "description-lt": "Augalai",
       "description": "Plants",
       "link": "/plants"
@@ -50,7 +50,7 @@
     {
       "id": 7,
       "img": "Reds.jpg",
-      "alt": "",
+      "alt": "Red plants",
       "description-lt": "Raudonos",
       "description": "Reds",
       "link": "/reds"
@@ -58,7 +58,7 @@
     {
       "id": 8,
       "img": "Yellows.jpg",
-      "alt": "",
+      "alt": "Yellow plants in dark grenn background",
       "description-lt": "Geltonos",
       "description": "Yellows",
       "link": "/yellows"

@@ -7,7 +7,7 @@
      tabindex="0">
 
   <div class="backdrop" @click="$emit('close')" />
-  <button class="close-btn" @click="$emit('close')">&times;</button>
+  <button class="close-btn" aria-label="Close" @click="$emit('close')">&times;</button>
 
   <div class="image-container">
     <div class="overlay"></div>
@@ -28,10 +28,10 @@
          :src="require(`../assets/images/${type}/${imagesList[currentImageIndex].img}`)"
          :alt="imagesList[currentImageIndex].alt">
 
-    <button class="carousel__btn carousel__btn--previous" @click="previousImage()">
+    <button title="Previous" class="carousel__btn carousel__btn--previous" @click="previousImage()">
       <i class="fa fa-angle-left"/>
     </button>
-    <button class="carousel__btn carousel__btn--next" @click="nextImage()">
+    <button title="Next" class="carousel__btn carousel__btn--next" @click="nextImage()">
       <i class="fa fa-angle-right"/>
     </button>
 
