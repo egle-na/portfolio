@@ -15,8 +15,9 @@
     <!-- Title -->
     <title-underlined>About me</title-underlined>
     <p>
-      Junior Frontend Developer with a passion for design and technology. Working mostly with the Vue.js framework.
-      Fast learner, thorough, and always eager to learn. Loves sunny days and being in nature.
+      Self-thought Frontend Developer based in Vilnius, Lithuania. Has a passion for design and technology.
+      Working mostly with the Vue.js framework. Fast learner, thorough, and always eager to learn.
+      Loves sunny days and being in nature.
     </p>
   </main>
 </template>
@@ -35,8 +36,10 @@
 </script>
 
 <style scoped>
+
   .container {
-    max-width: 1000px
+    max-width: 1000px;
+    margin-bottom: 3em;
   }
 
   p {

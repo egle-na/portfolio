@@ -49,9 +49,11 @@
 
   body {
     margin: 0;
-    background: var(--clr-bg);
+    background: var(--clr-bg) repeat-x bottom;
+    background-image: url(./assets/images/Background_plants.png);
     color: var(--clr-white);
     font-family: var(--ff-titillium);
+    min-height: 100vh;
   }
 
   a {
