@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img v-if="isLoading" src="" alt="" title="Loading...">
+<!--    <img v-if="isLoading" src="" alt="" title="Loading...">-->
+    <div v-if="isLoading">Loading...</div>
     <div v-else>
 
       <div class="flex-container" v-for="(set, index) in imagesReady" :key="index">

@@ -11,7 +11,7 @@
         <textarea v-model="message" placeholder="Enter your message here" aria-label="Message" required></textarea>
 
       </div>
-      <button class="submit-btn" type="submit">Send</button>
+      <button class="submit-btn" type="submit">Send{{ sendingMsg ? "ing..." : "" }}</button>
     </form>
     <FloatingMessage :message="messageSentMsg" v-if="messageSentMsg" @close="messageSentMsg = false"/>
   </div>
@@ -30,11 +30,13 @@
         name: "",
         email: "",
         message: "",
+        sendingMsg: false,
         messageSentMsg: false
       }
     },
     methods: {
       sendEmail() {
+        this.sendingMsg = true;
         // generate a five-digit number for the contact_number variable
         let contact_number = Math.random() * 100000 | 0;
 
@@ -61,6 +63,7 @@
         this.message = "";
       },
       messageSent(sent) {
+        this.sendingMsg = false;
         this.messageSentMsg = sent
             ? "Message sent successfully!"
             : "Could not send the message. Please try to contact me in other ways."

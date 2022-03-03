@@ -19,6 +19,13 @@
   import themes from "../modules/photography.json"
   export default {
     name: "Photography",
+    mounted() {
+      window.scrollTo({
+        top: 0,
+        bottom: 0,
+        behavior: 'smooth'
+      });
+    },
     data() {
       return {
         themes

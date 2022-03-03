@@ -60,7 +60,14 @@
   import ProjectCard from "@/components/ProjectCard";
   export default {
     name: "Frontend",
-    components: { ProjectCard }
+    components: { ProjectCard },
+    mounted() {
+      window.scrollTo({
+        top: 0,
+        bottom: 0,
+        behavior: 'smooth'
+      });
+    }
   }
 </script>
 
