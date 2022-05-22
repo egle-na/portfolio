@@ -46,13 +46,27 @@
   [
     {
       "id": 7,
+      "img": "sad_cloud.png",
+      "alt": "Girl in black with her head in the rainy cloud",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "img": "Prie_Eglutes.png",
+      "alt": "Girl unpacking Christmas gifts under the christmas tree",
+      "description": ""
+    }
+  ],
+  [
+    {
+      "id": 9,
       "img": "Skaiste.jpg",
       "alt": "A girl rollerskating with a coffee cup in her hands",
       "description": "",
       "vid": "Skaiste.mp4"
     },
     {
-      "id": 8,
+      "id": 10,
       "img": "Neziniukas.jpg",
       "alt": "A cyclist riding a bike",
       "description": ""
@@ -60,14 +74,14 @@
   ],
   [
     {
-      "id": 9,
+      "id": 11,
       "img": "Ieva.png",
       "alt": "Scout girl with glasses reading a book",
       "description": "",
       "vid": "Ieva.mp4"
     },
     {
-      "id": 10,
+      "id": 12,
       "img": "Mama.png",
       "alt": "Women taking a picture of a spider and working on a computer, cat on the table",
       "description": "",
@@ -76,13 +90,13 @@
   ],
   [
     {
-      "id": 11,
+      "id": 13,
       "img": "dviratis_miske.jpg",
       "alt": "Bicycle in the middle of forest, with some light shining on it",
       "description": ""
     },
     {
-      "id": 12,
+      "id": 14,
       "img": "tetis_miske.jpg",
       "alt": "A couple with a dog walking in the forest",
       "description": ""
@@ -90,13 +104,13 @@
   ],
   [
     {
-      "id": 13,
+      "id": 15,
       "img": "veidas-augalai.jpg",
       "alt": "A females portrait, waterfall adn plants growing as hair",
       "description": ""
     },
     {
-      "id": 14,
+      "id": 16,
       "img": "siltnamis.jpg",
       "alt": "A pretty greenhouse with growing plants and gardening equipment",
       "description": ""
