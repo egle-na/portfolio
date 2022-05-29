@@ -37,12 +37,34 @@
   <!-- Maišiagala Kindergarten -->
   <project-card page="https://www.maisiagalosdarzelis.lt/">
     <template v-slot:title>Maišiagala Kindergarten</template>
-    <template v-slot:description>Maišiagala kindergarten website redesign. Work in progress.</template>
+    <template v-slot:description>
+      <p>
+        Maišiagala kindergarten website redesign. Currently working on design in Figma. Planing to rebuild
+        project using to Vue.js framework. Work in progress.
+      </p>
+    </template>
     <template v-slot:display>
       <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fyhm6tMPcXpHraV5w6KKVzn%2FDar%25C5%25BEelis%3Fnode-id%3D0%253A1"
               allowfullscreen
               aria-label="Kindergarten design template"
               class="figma-iframe" />
+    </template>
+  </project-card>
+
+  <!-- GroupIt Extension -->
+  <project-card code="https://github.com/egle-na/GroupIt-Extension">
+    <template v-slot:title>GroupIt Extension</template>
+    <template v-slot:description>
+      <p>
+        Google Chrome extension that easily stores and opens grouped tabs. It was a fun side project that I made
+        for myself to help manage my infinite amount of opened tabs. I did everything from the design in Figma to
+        coding and learning about <a href="https://developer.chrome.com/docs/extensions/" rel="nofollow">chrome extensions API</a>.
+        Build with simple <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript.
+      </p>
+    </template>
+    <template v-slot:display>
+<!--   TO DO: change this image   -->
+      <img src="../assets/images/frontend/Portfolio-screen-capture.jpg" alt="Portfolio page illustrations grid">
     </template>
   </project-card>
 

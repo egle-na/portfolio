@@ -64,6 +64,16 @@
     white-space: nowrap;
   }
 
+  p a:hover {
+    text-decoration: underline;
+  }
+
+  p a {
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+  }
+
   button {
     background: none;
     color: inherit;

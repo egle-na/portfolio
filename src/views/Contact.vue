@@ -39,7 +39,7 @@
 
   .container {
     max-width: 1000px;
-    margin-bottom: 3em;
+    padding-bottom: 4em;
   }
 
   p {

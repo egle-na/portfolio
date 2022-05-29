@@ -17,15 +17,10 @@
       </slot>
 
       <div class="btn-container">
-<!--        <slot name="codeButton">-->
-<!--          <a href="#" class="btn btn-purple" :class="{'btn&#45;&#45;disabled': false}">Source code</a>-->
-<!--        </slot>-->
-        <a v-if="code" :href="code" target="_blank" class="btn btn--purple">Source code</a>
-        <a :href="page" target="_blank" class="btn" :class="{'btn--disabled': page}">Visit page</a>
 
-<!--        <slot name="pageButton">-->
-<!--          <a href="#" class="btn" :class="{'btn&#45;&#45;disabled': false}">Visit page</a>-->
-<!--        </slot>-->
+        <a v-if="code" :href="code" target="_blank" class="btn btn--purple">Source code</a>
+        <a v-if="page" :href="page" target="_blank" class="btn" :class="{'btn--disabled': page}">Visit page</a>
+
       </div>
 
     </div>
@@ -82,7 +77,7 @@
     flex-direction: column;
     /*height: 100%;*/
     min-height: available;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
   }
 
@@ -92,6 +87,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 1em;
   }
 
   .project-display img {
@@ -103,7 +99,7 @@
   }
 
   .project-card h2 {
-    margin: 0 auto .5em 0;
+    margin: 0 auto 1em 0;
   }
 
   .btn-container {
@@ -162,12 +158,13 @@
     }
 
     .project-card h2 {
-      margin: 0 auto .5em 0;
+      margin: 0 auto .3em 0;
     }
 
     .project-description {
       width: 55%;
       text-align: left;
+      padding-top: 1em;
     }
 
     .project-display {
@@ -175,6 +172,7 @@
       width: 45%;
       height: 100%;
       min-height: 300px;
+      margin-bottom: 0;
     }
 
     .btn-container{
