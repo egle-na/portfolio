@@ -63,8 +63,10 @@
       </p>
     </template>
     <template v-slot:display>
-<!--   TO DO: change this image   -->
-      <img src="../assets/images/frontend/Portfolio-screen-capture.jpg" alt="Portfolio page illustrations grid">
+      <iframe src="https://embed.figma.com/design/gwUF4XaAkWDsBsT0Mgt3GQ/Groups-Extension?node-id=0-1&embed-host=share" 
+        allowfullscreen 
+        aria-label="GroupIt extention design file"
+        class="figma-iframe" />
     </template>
   </project-card>
 
