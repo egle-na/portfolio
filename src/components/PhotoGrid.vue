@@ -1,7 +1,9 @@
 <template>
   <div>
 <!--    <img v-if="isLoading" src="" alt="" title="Loading...">-->
-    <div v-if="isLoading">Loading...</div>
+    <div v-if="isLoading"><LoadingAnimation /></div>
+    <!-- <div v-if="true"><LoadingAnimation /></div> -->
+    
     <div v-else>
 
       <div class="flex-container" v-for="(set, index) in imagesReady" :key="index">
@@ -17,8 +19,11 @@
   </div>
 </template>
 <script>
+import LoadingAnimation from './LoadingAnimation.vue';
+
   export default {
     name: "PhotoGrid",
+    components: {LoadingAnimation},
     props:[ 'images', 'type' ],
     data() {
       return{
@@ -88,8 +93,7 @@
             let widthInPercentage = (widths[index] * ratios[index] ) / widthTotal * 100;
             set[index].width = `${widthInPercentage}%`;
           })
-      },
-
+      }
     }
   }
 </script>
