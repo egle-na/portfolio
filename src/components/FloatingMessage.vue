@@ -39,6 +39,6 @@
     color: var(--clr-white-transparent);
   }
 
-  .floating-card:hover .
+  /* .floating-card:hover . */
 
 </style>

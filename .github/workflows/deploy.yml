@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
       - name: Create Node Environment
         uses: actions/setup-node@v1
         with:
@@ -21,7 +21,7 @@ jobs:
           yarn install
           yarn build
       - name: Create 404 Redirect
-        uses: canastro/copy-file-action@master
+        uses: cp dist/index.html dist/404.html
         with:
           source: "dist/index.html"
           target: "dist/404.html"
