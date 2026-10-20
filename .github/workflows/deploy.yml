@@ -21,10 +21,7 @@ jobs:
           yarn install
           yarn build
       - name: Create 404 Redirect
-        uses: cp dist/index.html dist/404.html
-        with:
-          source: "dist/index.html"
-          target: "dist/404.html"
+        run: cp dist/index.html dist/404.html
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
